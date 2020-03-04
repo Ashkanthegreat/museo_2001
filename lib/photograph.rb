@@ -1,8 +1,11 @@
+require 'CSV'
+
 class Photograph
 
-  attr_reader :attributes
+  attr_reader :attributes, :id
 
   def initialize(attributes)
-    @attributes = attributes
+    @attributes = {}
+    @id = id
   end
 end
